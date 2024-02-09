@@ -1,0 +1,241 @@
+<!--Instructions for Capstone Project 1 - Online Resume
+Project Specifications
+1. Create an HTML file named index.html. ✅
+2. Use the <!DOCTYPE html> declaration at the beginning of the file to indicate that it's an HTML document.✅
+3. Create a head section that includes a title element with the text "My Resume".✅
+4. Inside the body section, write HTML code to create an online resume covering the following aspects:
+-Summary or objective statement✅
+-Education (list degrees, schools, and dates)✅
+-Work experience (list job titles, employers, dates, and responsibilities)✅
+-Skills (list relevant skills or areas of expertise)✅
+-Awards, certifications, or other achievements (list any relevant awards, certifications, or other accomplishments)✅
+-Use appropriate HTML tags to format the content of each section, such as h1 for section headings and ul or ol for lists.✅
+-Use HTML tags to add a profile photo of yourself.✅
+-Use relevant anchor tags to create a multi-page website, listing other aspects of your resume such as Hobbies and Contact details.✅
+-Add a footer element with your name and any copyright information or other disclaimers. (Hint: use the MDN docs for things you don't know how to do: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer✅
+-Save the index.html file and open it in a web browser to ensure that it displays correctly.✅
+-Add your website to your GitHub to start building your portfolio.
+-Publish your website using GitHub pages and share it here (in the Q&A) with other students.
+
+Comment and make suggestions to other students' projects.
+Example
+https://appbrewery.github.io/capstone-1-example
+
+Requirements
+In order to keep the project within scope (time, energy, resource), you can only use HTML to complete thing project. Even if you know CSS and JS (which we're assuming you don't yet), you are expected to only write the website using HTML.
+
+Imagine you are a professional developer working on this project. There will be things you don't know, things you want to do but haven't yet learnt how to. As a professional developer, you need to know the limits of your abilities and look up other things in Google, MDN docs, the internet.
+
+-->
+
+<!DOCTYPE html><!--Informs the web browser what version of the HTML file its being used/written-->
+<html lang="en"><!--The root (opening) of the document.lang refers to the language being used.important for the visual impared-->
+
+<head><!--Important information about the website but NOT VISIBLE to the user.Tags/attributes can help search engines find your website-->
+    <meta charset="UTF-8"><!--meta tag with charset attribute(allowing character to be displayed correctly).-->
+    <meta name="description" content="Front-End Development"><!--Information used by Web Browser for better searching-->
+    <meta name="keywords" content="HTML, CSS, Javascript"><!--Information for web browser for better searching-->
+    <meta name="author" content="Josue Martinez"><!--Information for web browser to read-->
+    <meta http-equiv="refresh" content="30"><!--Telling the web browser to refresh every 30 seconds-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Allows content to be displayed correctly in any device.(REQUIRED)-->
+    <title>My Resume</title><!--Defines the title of the document and displayed on the tab(REQUIRED)-->
+</head>
+
+<body><!--Information that will be VISIBLE to the user-->
+    <hr><!--Creating a horizontal line-->
+    
+    <h1>
+    Josué Martìnez
+    </h1><!--My Full Name-->
+    
+    <hr><!--Horizontal Line. Need to change it visually -->
+    
+    <p>
+    <strong><a href="mailto:jmtz1941@gmail.com">Email:jmtz1941@gmail.com</a></strong><!--Making the email important-->
+    </p><!--Contact information.-->
+    
+    <h3>
+    SUMMARY
+    </h3><!--Summary Section.Need to create a horizontal line next to the word using CSS-->
+
+    <p>
+    Former high school music director with 15+ years of experience. I am a developing professional in web development and infrastructure technology.
+    </p><!--Brief Summary Statement Section-->
+   
+    <h3>
+    SKILLS
+    </h3><!--Skills Section. Need to create a horizontal line next to the word using CSS-->
+
+    <p>
+    Interpersonal Skills:: problem solving, process development, situational adaptability, professional communication, case management, CRM experience.
+    </p><!--Information about skills. Needs to be bold using CSS-->
+
+    <p>
+    Technical Skills and Tools :: Python, GIT, BASH, AWS, Windows, SQL Server Management, Salesforce, ZenDesk
+    </p><!--Information about skills. Needs CSS-->
+
+    <p>
+    Professional Development :: Udemy, W3Schools, App Academy
+    </p><!--Information about skills. Needs CSS-->
+
+    <p>
+    Other Skills :: phone and e-mail support, create and maintain documentation, familiarity with working remote.
+    </p><!--Information about skills. Needs CSS-->
+   
+    <h3>
+    PROFESSIONAL EXPERIENCE
+    </h3><!--Professional Experience Section-->
+   
+    <a href="./public/Tuloso-Midway.html" target="_blank">
+    TULOSO-MIDWAY ISD
+    </a><!--Tuloso-Midway Section. Create a link to a webpage🕸📃 and have it open it in a different tab-->
+    
+    <p><a href="./public/Ben-Bolt-Palito-Blanco.html">
+    BEN BOLT-PALITO BLANCO ISD</a>
+    </p><!--Ben-Bolt Section. Create a link to a webpage🕸📃 and have it open in the same tab. 🚨Had to add the <p> element in order for the word to be placed on the bottom of Tuloso-->
+
+    <h3>
+    MEASURED RESULTS (METRICS)
+    </h3><!--Measured Metrics Section-->
+
+    <p>UIL Solo/Ensemble State Competition :: Tuloso-Midway Percussion Ensemble</p>
+    <details>
+        <summary>Competed and Placed</summary>
+        <ul>
+            <li>2007</li>
+            <li>2008</li>
+            <li>2009</li>
+            <li>2011</li>
+            <li>2012</li>
+            <li>2013</li>
+            <li>2014</li>
+            <li>2015</li>
+            <li>2016</li>
+            <li>2017</li>
+            <li>2018</li>
+            <li>2019</li>       
+        </ul>
+    </details><!--Information regarding competed and placed.Info opens and close-->
+
+    <p>UIL Concert/Sight-Reading Competition :: Tuloso-Midway Non-Varsity Band</p>
+    <details>
+        <summary>Competed and Placed</summary>
+            <ul>
+                <li> 2007</li>
+                <li>2012</li>
+                <li>2016</li>
+            </ul>
+    </details><!--Information regarding competed and placed.Info opens and close-->
+
+    <p>UIL Marching Region Competition :: Varsity Band</p>
+    <details>
+        <summary>Competed and Placed</summary>
+            <ul>
+                <li>2006</li>
+                <li>2007</li>
+                <li>2008</li>
+                <li>2009</li>
+                <li>2010</li>
+                <li>2011</li>
+                <li>2012</li>
+                <li>2013</li>
+                <li>2014</li>
+                <li>2015</li>
+                <li>2016</li>
+                <li>2017</li>
+                <li>2018</li>
+                <li>2019</li>
+            </ul>
+    </details><!--Information regarding competed and placed.Info opens and close-->
+
+    <p>UIL Marching Area Competition :: Tuloso-Midway Varsity Band</p>
+    <details>
+        <summary>Competed and Placed</summary>
+            <ul>
+                <li>2007</li>
+                <li>2009</li>
+                <li>2011</li>
+                <li>2013</li>
+                <li>2015</li>
+                <li>2017</li>
+                <li>2019</li>
+            </ul>
+    </details><!--Information regarding competed and placed.Info opens and close-->
+
+    <p>UIL Jazz Region Competition :: Tuloso-Midway Jazz Band</p>
+    <details>
+        <summary>Competed and Placed</summary>
+            <ul>
+                <li>2018</li>
+            </ul>
+    </details><!--Information regarding competed and placed.Info opens and close-->
+
+    <p>TECA Indoor Drumline :: Tuloso-Midway Percussion Ensemble</p>
+    <details>
+        <summary>Competed and Placed</summary>
+            <ul>
+                <li>2008</li>
+                <li>2009</li>
+            </ul>
+    </details><!--Information regarding competed and placed.Info opens and close-->
+
+    <p>UIL Concert/Sight-Reading Competition :: Ben Bolt-Palito Blanco Non-Varsity</p>
+    <details>
+        <summary>Competed and Placed</summary>
+        <ul>
+            <li>2005</li>
+            <li>2006</li>
+        </ul>
+    </details><!--Information regarding competed and placed.Info opens and close-->
+
+    <p>UIL Marching Region Competition :: Ben Bolt-Palito Blanco Varsity</p>
+    <details>
+        <summary>Competed and Placed</summary>
+        <ul>
+            <li>2003</li>
+            <li>2004</li>
+            <li>2005</li>
+        </ul>
+    </details><!--Information regarding competed and placed.Info opens and close-->
+
+    <p>UIL Marching State Competition :: Ben Bolt-Palito Blanco Varsity</p>
+    <details>
+        <summary>Competed and Placed</summary>
+        <ul>
+            <li>2003</li>
+        </ul>
+    </details><!--Information regarding competed and placed.Info opens and close-->
+    
+    <h3>FORMAL EDUCATION</h3>
+    <p>Texas A&M University - Kingsville ::</p>
+    <p>Kingsville, Texas :: Bachelors of Music Education</p>
+    <h3>ADDITIONAL EDUCATION</h3>
+    <p>UDEMY</p>
+    <ul>
+        <li>Online :: Python for Programmers</li>
+        <ul>
+            <li><a href="https://www.udemy.com/certificate/UC-4C085346-A503-4F30-B585-1ECDF79BF71B/" target="_blank">Certification</a></li>
+        </ul>
+    </ul>
+    <ul>
+        <li>Online :: SRE - The Big Picture</li>
+        <ul>
+            <li><a href="https://www.udemy.com/certificate/UC-350c44e8-137f-4153-b0e7-79fedccf261c/" target="_blank">Certification</a></li>
+        </ul>
+    </ul>
+    <h2>VOLUNTEERING</h2>
+    <p>Church Unlimited</p>
+    <ul>
+        <li><a href="https://churchunlimited.com/roddfield" target="_blank">Music Ministry-Piano Player</a></li>
+    </ul>
+    <p>Lord of the Harvest</p>
+    <ul>
+        <li><a href="https://www.lothchurch.com/" target="_blank">Music Department-Piano Instructor/Music Director</a></li>
+    </ul>
+<img src="./Imges/Profile.jpg" alt="Author's Profile" width="200" height="200">
+<footer>
+    <p>Produced by: Josué Martìnez</p>
+    &copy; copyright reserved
+</footer>
+</body>
+</html><!--The root (closing) of the document.-->
